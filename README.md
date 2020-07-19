@@ -1,6 +1,6 @@
 # Mission-to-Mars
 ## Robert's Portfolio PNG File
-![Robert's Portfolio](RobertPortfolio1.png)
+![Robert's Portfolio](Robert%20Portfolio%201.png)
 
 ## Robert's Portfolio PNG File
 ![Robert's Portfolio](RobertPortfolio2.png)
