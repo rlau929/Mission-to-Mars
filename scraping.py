@@ -28,7 +28,7 @@ def mars_news(browser):
 
     # Scrape Mars News
     # Visit the mars nasa news site
-    url = 'https://mars.nasa.gov/news/'
+    url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
     browser.visit(url)
 
     # Optional delay for loading the page
@@ -54,11 +54,11 @@ def mars_news(browser):
 
 def featured_image(browser):
     # Visit URL
-    url = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
+    url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
     browser.visit(url)
 
     # Find and click the full image button
-    full_image_elem = browser.find_by_id('full_image')[0]
+    full_image_elem = browser.find_by_id('image')[0]
     full_image_elem.click()
 
     # Find the more info button and click that
@@ -79,7 +79,7 @@ def featured_image(browser):
         return None
 
     # Use the base url to create an absolute url
-    img_url = f'https://www.jpl.nasa.gov{img_url_rel}'
+    img_url = f'https://astrogeology.usgs.gov/search/map/Mars/Viking{img_url_rel}'
 
     return img_url
 
